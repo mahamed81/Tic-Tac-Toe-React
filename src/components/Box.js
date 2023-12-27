@@ -2,12 +2,13 @@ import React from 'react'
 import './Box.css'
 export const Box = ({value, onClick}) => {
 
-    const style = value == 'x' ? 'box x' : 'box y';
-        console.log(style)
-        console.log(" Here " + onClick)
+    const style = value === 'x' ? 'box x' : 'box o';
+      
   return (
-    
-    <button className={style} onClick = {onclick}>{value}</button>
+    <>
+    <button className={style} onClick = {onClick}>{value}</button>
+      
+        </>
   )
 }
 

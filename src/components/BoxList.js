@@ -1,17 +1,40 @@
 import React from 'react'
 import { Box } from './Box'
+import './BoxList.css'
+import { useState } from 'react';
+
 
 export const BoxList = () => {
 
-    let arr = [1,2,3,4,5,6,7,8,9]
+  const [board, setBoard] = useState(Array(9).fill(null));
+  const [playerx, setPlayerx] = useState(true);
+    let winner = [
+        [0,1,2],
+        [3,4,5]
 
-    const list = arr.map((el)=>{
-       {console.log()}
-        <Box value ='x' onClick={null}/>
-    })
+    ]
+    //console.log(winner[0][2])
+  const handleBoard = (boxIdx)=>{
+
+    const updatedBoard = board.map((value, idx)=>{
+          
+      if(idx === boxIdx){
+          return playerx ? 'x' : 'o'
+      }else{
+        return value;
+      }
+       
+      })
+    
+      setBoard(updatedBoard)
+      setPlayerx(!playerx)
+  }
+
   return (
-    <div>
-       {list}
+    <div className='board'>
+       {board.map((value, idx)=>{
+        return <Box value = {value} onClick = {()=>handleBoard(idx)}/>
+       })}
     </div>
   )
 }
