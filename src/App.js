@@ -1,12 +1,12 @@
 import './App.css';
 import { BoxList } from './components/BoxList';
 
-function App() {
+function App({score}) {
  
   return (
     <div className="App">
+      
       <BoxList/>
-
     </div>
   );
 }

@@ -1,14 +1,19 @@
 import React from 'react'
 import './Box.css'
-export const Box = ({value, onClick, disabled}) => {
+export const Box = ({ value, onClick, reset }) => {
 
-    const style = value === 'x' ? 'box x' : 'box o';
-      
+  const style = value === 'x' ? 'box x' : 'box o';
+
   return (
     <>
-    <button className={style}  onClick = {onClick}>{value} </button>
+      <div>
+        <button className={style} onClick={onClick}>{value} </button>
+
+      </div>
       
-        </>
+
+
+    </>
   )
 }
 
