@@ -3,3 +3,14 @@
     grid-template-columns: repeat(3, 6rem);
     place-content: center;
 }
+
+.draw {
+
+    text-align: center;
+    color: green;
+}
+
+.tran {
+    text-align: center;
+    color: transparent;
+}

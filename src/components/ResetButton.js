@@ -1,9 +1,9 @@
 import React from 'react'
+import './ResetButton.css'
 
 export default function ResetButton({handleReset}) {
   return (
-    <div>
-        <button onClick={handleReset}>Reset</button>
-    </div>
+        <button className='reset' onClick={handleReset}>Reset</button>
+
   )
 }
