@@ -1,3 +1,7 @@
+Project covers ReactJS, functional components, props, state, hooks, HTML, and CSS. It's a basic Tic-Tac-Toe game and functionalities
+include Draw, Winner, Scrores, and Game Reset
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
