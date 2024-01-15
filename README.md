@@ -1,4 +1,4 @@
-Project covers ReactJS, functional components, props, state, hooks, HTML, and CSS. It's a basic Tic-Tac-Toe game and functionalities
+This project covers ReactJS, functional components, props, state, hooks, HTML, and CSS. It's a basic Tic-Tac-Toe game and functionalities
 include Draw, Winner, Scrores, and Game Reset
 
 
